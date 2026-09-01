@@ -1,0 +1,321 @@
+<head>
+    <meta charset="utf-8">
+    <link href="style.css"rel="stylesheet">
+    <link href="test.js"rel="script">
+    </head>
+<h1> Hello World </h1>
+<p> </p>
+<h3> I am a new computer code </h3>
+<p> </p>
+<!-- Place the following CSS in your <head> or stylesheet -->
+<style>
+/* This is an optional body style to provide a background for the page */
+body {
+    background-color: #f9fafb;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+/* === Grid Container for the Cards === */
+.cards-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+/* === Testimonial Card Styles === */
+.qt-card {
+    --qt-card-padding: 2rem;
+    --qt-card-bg: #ffffff;
+    --qt-card-radius: 12px;
+    --qt-card-shadow: 0 4px 10px rgba(0,0,0,0.05);
+
+    background-color: var(--qt-card-bg);
+    border-radius: var(--qt-card-radius);
+    padding: var(--qt-card-padding);
+    box-shadow: var(--qt-card-shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.qt-card .qt-icon-quote {
+    width: 36px;
+    height: 36px;
+    color: #e5e7eb; /* A light, subtle gray */
+    margin-bottom: 1rem;
+}
+
+.qt-card .qt-blockquote {
+    flex-grow: 1; /* Allows the quote to take up available space */
+    margin: 0;
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #4b5563; /* A muted gray */
+}
+
+.qt-card .qt-blockquote p {
+    margin: 0;
+}
+
+.qt-card .qt-figcaption {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #f3f4f6; /* A very light divider line */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.qt-card .qt-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0; /* Prevents avatar from shrinking */
+}
+
+.qt-card .qt-author-details {
+    line-height: 1.4;
+}
+
+.qt-card .qt-author-name {
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+}
+
+.qt-card .qt-author-role {
+    font-size: 0.9rem;
+    color: #5d86c9;
+    margin: 0;
+}
+</style>
+
+<!-- Place the following HTML in your <body> -->
+<div class="cards-grid-container">
+
+    <!-- Card 1 -->
+    <figure class="qt-card">
+        <svg class="qt-icon-quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V216z"/></svg>
+        <blockquote class="qt-blockquote">
+            <p>To speak a language is to take on a world, a culture.</p>
+        </blockquote>
+        <figcaption class="qt-figcaption">
+            <!-- Image by https://placehold.co. Replace with your own. -->
+            <img class="qt-avatar" src="https://placehold.co/96x96/666/fff/png?text=AZ" alt="To speak a language is to take on a world, a culture.">
+            <div class="qt-author-details">
+                <p class="qt-author-name">Frantz Fanon</p>
+                <p class="qt-author-role">CEO, Quantum Innovations</p>
+            </div>
+        </figcaption>
+    </figure>
+
+    <!-- Card 2 -->
+    <figure class="qt-card">
+        <svg class="qt-icon-quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V216z"/></svg>
+        <blockquote class="qt-blockquote">
+            <p>These code templates are a game-changer. They saved me countless hours of development time and the results are incredibly polished and professional.</p>
+        </blockquote>
+        <figcaption class="qt-figcaption">
+            <!-- Image by https://placehold.co. Replace with your own. -->
+            <img class="qt-avatar" src="https://placehold.co/96x96/333/fff/png?text=BX" alt="Avatar of Barnaby Wexler.">
+            <div class="qt-author-details">
+                <p class="qt-author-name">Barnaby Wexler</p>
+                <p class="qt-author-role">Lead Developer, Starlight Solutions</p>
+            </div>
+        </figcaption>
+    </figure>
+
+    <!-- Card 3 -->
+    <figure class="qt-card">
+        <svg class="qt-icon-quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V216z"/></svg>
+        <blockquote class="qt-blockquote">
+            <p>Support went above and beyond to help us integrate the new designs. I would highly recommend their services to anyone.</p>
+        </blockquote>
+        <figcaption class="qt-figcaption">
+            <!-- Image by https://placehold.co. Replace with your own. -->
+            <img class="qt-avatar" src="https://placehold.co/96x96/999/fff/png?text=CR" alt="Avatar of Caspian Rowe.">
+            <div class="qt-author-details">
+                <p class="qt-author-name">Caspian Rowe</p>
+                <p class="qt-author-role">Project Manager, Apex Digital</p>
+            </div>
+        </figcaption>
+    </figure>
+
+</div>
+<p> </p>
+<!-- Place the following CSS in your <head> or stylesheet -->
+<style>
+/* This is an optional body style to provide a background for the page */
+body {
+    background-color: #f3f4f6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+/* === Grid Container for the Cards === */
+.cards-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+/* === Calendar Date Card Styles === */
+.cal-card {
+    --cal-card-radius: 12px;
+    --cal-card-shadow: 0 4px 10px rgba(0,0,0,0.06);
+
+    background-color: #ffffff;
+    border-radius: var(--cal-card-radius);
+    box-shadow: var(--cal-card-shadow);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.25rem;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.cal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+}
+
+.cal-card-link {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 1.25rem;
+}
+
+/* The date block */
+.cal-card-date-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the top */
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    overflow: hidden; /* Important for containing the month banner */
+}
+
+.cal-card-month {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #ef4444; /* Red for emphasis */
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.35rem 0;
+}
+
+.cal-card-day {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.2;
+    margin-top: 0.35rem;
+}
+
+/* Event info block */
+.cal-card-info {
+    flex-grow: 1;
+}
+
+.cal-card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0 0 0.35rem;
+    line-height: 1.3;
+}
+
+.cal-card-details {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+.cal-card-details svg {
+    width: 16px;
+    height: 16px;
+    color: #9ca3af;
+    flex-shrink: 0;
+}
+</style>
+
+<!-- Place the following HTML in your <body> -->
+<div class="cards-grid-container">
+    
+    <!-- Card 1 -->
+    <article class="cal-card">
+        <a href="#" class="cal-card-link">
+            <time class="cal-card-date-block" datetime="2025-08-20">
+                <span class="cal-card-month">Aug</span>
+                <span class="cal-card-day">20</span>
+            </time>
+            <div class="cal-card-info">
+                <h3 class="cal-card-title">Design Systems Workshop</h3>
+                <p class="cal-card-details">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                        <path fill-rule="evenodd" d="M8,0C4.687,0,2,2.687,2,6c0,1.305,0.428,2.502,1.139,3.482c0.013,0.024,0.015,0.05,0.029,0.072l4,6
+                            C7.354,15.833,7.666,16,8,16s0.646-0.167,0.832-0.446l4-6c0.015-0.022,0.017-0.048,0.029-0.072C13.572,8.502,14,7.305,14,6
+                            C14,2.687,11.313,0,8,0z M8,8c-1.105,0-2-0.895-2-2s0.895-2,2-2s2,0.895,2,2S9.105,8,8,8z"></path>
+                    </svg>
+                    The Innovation Loft
+                </p>
+            </div>
+        </a>
+    </article>
+
+     <!-- Card 2 -->
+    <article class="cal-card">
+        <a href="#" class="cal-card-link">
+            <time class="cal-card-date-block" datetime="2025-09-05">
+                <span class="cal-card-month">Sep</span>
+                <span class="cal-card-day">05</span>
+            </time>
+            <div class="cal-card-info">
+                <h3 class="cal-card-title">Founder's Fireside Chat</h3>
+                 <p class="cal-card-details">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                        <path fill-rule="evenodd" d="M8,0C4.687,0,2,2.687,2,6c0,1.305,0.428,2.502,1.139,3.482c0.013,0.024,0.015,0.05,0.029,0.072l4,6
+                            C7.354,15.833,7.666,16,8,16s0.646-0.167,0.832-0.446l4-6c0.015-0.022,0.017-0.048,0.029-0.072C13.572,8.502,14,7.305,14,6
+                            C14,2.687,11.313,0,8,0z M8,8c-1.105,0-2-0.895-2-2s0.895-2,2-2s2,0.895,2,2S9.105,8,8,8z"></path>
+                    </svg>
+                    Online &amp; In Person
+                </p>
+            </div>
+        </a>
+    </article>
+    
+    <!-- Card 3 -->
+    <article class="cal-card">
+        <a href="#" class="cal-card-link">
+            <time class="cal-card-date-block" datetime="2025-09-10">
+                <span class="cal-card-month">Sep</span>
+                <span class="cal-card-day">10</span>
+            </time>
+            <div class="cal-card-info">
+                <h3 class="cal-card-title">Product Launch: The Quantum Series</h3>
+                 <p class="cal-card-details">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                        <path fill-rule="evenodd" d="M8,0C4.687,0,2,2.687,2,6c0,1.305,0.428,2.502,1.139,3.482c0.013,0.024,0.015,0.05,0.029,0.072l4,6
+                            C7.354,15.833,7.666,16,8,16s0.646-0.167,0.832-0.446l4-6c0.015-0.022,0.017-0.048,0.029-0.072C13.572,8.502,14,7.305,14,6
+                            C14,2.687,11.313,0,8,0z M8,8c-1.105,0-2-0.895-2-2s0.895-2,2-2s2,0.895,2,2S9.105,8,8,8z"></path>
+                    </svg>
+                    Exclusive Livestream
+                </p>
+            </div>
+        </a>
+    </article>
+</div>
